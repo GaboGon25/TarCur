@@ -21,5 +21,17 @@ namespace TarCur
         {
 
         }
+
+        private void txtPrimerNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten numeros en este campo",
+                    "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
     }
 }

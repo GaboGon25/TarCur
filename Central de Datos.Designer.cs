@@ -44,32 +44,32 @@
             label14 = new Label();
             label15 = new Label();
             label17 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
+            txtNumEmpleado = new TextBox();
+            txtRuc = new TextBox();
+            txtINSS = new TextBox();
+            txtCedula = new TextBox();
+            txtSegundoApellido = new TextBox();
+            txtPrimerApellido = new TextBox();
+            txtSegundoNombre = new TextBox();
+            txtPrimerNombre = new TextBox();
             dateTimePicker1 = new DateTimePicker();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            textBox9 = new TextBox();
+            cboGenero = new ComboBox();
+            cboEstadoC = new ComboBox();
+            txtDireccion = new TextBox();
             label18 = new Label();
             label19 = new Label();
             label20 = new Label();
-            comboBox3 = new ComboBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
+            cboEstadoL = new ComboBox();
+            txtSalario = new TextBox();
+            txtTelefono = new TextBox();
+            txtCelular = new TextBox();
             dateTimePicker2 = new DateTimePicker();
             dateTimePicker3 = new DateTimePicker();
             groupBox1 = new GroupBox();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btnLimpiar = new Button();
+            btnNomina = new Button();
+            btnRegistro = new Button();
+            btnGuardar = new Button();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
             groupBox1.SuspendLayout();
@@ -222,61 +222,62 @@
             label17.TabIndex = 16;
             label17.Text = "Salario Ordinario:";
             // 
-            // textBox1
+            // txtNumEmpleado
             // 
-            textBox1.Location = new Point(1313, 52);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(251, 39);
-            textBox1.TabIndex = 18;
+            txtNumEmpleado.Location = new Point(1313, 52);
+            txtNumEmpleado.Name = "txtNumEmpleado";
+            txtNumEmpleado.Size = new Size(251, 39);
+            txtNumEmpleado.TabIndex = 18;
             // 
-            // textBox2
+            // txtRuc
             // 
-            textBox2.Location = new Point(238, 45);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(251, 39);
-            textBox2.TabIndex = 19;
+            txtRuc.Location = new Point(238, 45);
+            txtRuc.Name = "txtRuc";
+            txtRuc.Size = new Size(251, 39);
+            txtRuc.TabIndex = 19;
             // 
-            // textBox3
+            // txtINSS
             // 
-            textBox3.Location = new Point(751, 52);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(251, 39);
-            textBox3.TabIndex = 20;
+            txtINSS.Location = new Point(751, 52);
+            txtINSS.Name = "txtINSS";
+            txtINSS.Size = new Size(251, 39);
+            txtINSS.TabIndex = 20;
             // 
-            // textBox4
+            // txtCedula
             // 
-            textBox4.Location = new Point(270, 289);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(251, 39);
-            textBox4.TabIndex = 21;
+            txtCedula.Location = new Point(270, 289);
+            txtCedula.Name = "txtCedula";
+            txtCedula.Size = new Size(251, 39);
+            txtCedula.TabIndex = 21;
             // 
-            // textBox5
+            // txtSegundoApellido
             // 
-            textBox5.Location = new Point(798, 118);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(251, 39);
-            textBox5.TabIndex = 22;
+            txtSegundoApellido.Location = new Point(798, 118);
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Size = new Size(251, 39);
+            txtSegundoApellido.TabIndex = 22;
             // 
-            // textBox6
+            // txtPrimerApellido
             // 
-            textBox6.Location = new Point(270, 121);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(251, 39);
-            textBox6.TabIndex = 23;
+            txtPrimerApellido.Location = new Point(270, 121);
+            txtPrimerApellido.Name = "txtPrimerApellido";
+            txtPrimerApellido.Size = new Size(251, 39);
+            txtPrimerApellido.TabIndex = 23;
             // 
-            // textBox7
+            // txtSegundoNombre
             // 
-            textBox7.Location = new Point(798, 34);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(251, 39);
-            textBox7.TabIndex = 24;
+            txtSegundoNombre.Location = new Point(798, 34);
+            txtSegundoNombre.Name = "txtSegundoNombre";
+            txtSegundoNombre.Size = new Size(251, 39);
+            txtSegundoNombre.TabIndex = 24;
             // 
-            // textBox8
+            // txtPrimerNombre
             // 
-            textBox8.Location = new Point(270, 34);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(251, 39);
-            textBox8.TabIndex = 25;
+            txtPrimerNombre.Location = new Point(270, 34);
+            txtPrimerNombre.Name = "txtPrimerNombre";
+            txtPrimerNombre.Size = new Size(251, 39);
+            txtPrimerNombre.TabIndex = 25;
+            txtPrimerNombre.KeyPress += txtPrimerNombre_KeyPress;
             // 
             // dateTimePicker1
             // 
@@ -285,30 +286,30 @@
             dateTimePicker1.Size = new Size(194, 39);
             dateTimePicker1.TabIndex = 26;
             // 
-            // comboBox1
+            // cboGenero
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Masculino", "Femenino" });
-            comboBox1.Location = new Point(1342, 125);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(194, 40);
-            comboBox1.TabIndex = 27;
+            cboGenero.FormattingEnabled = true;
+            cboGenero.Items.AddRange(new object[] { "Masculino", "Femenino" });
+            cboGenero.Location = new Point(1342, 125);
+            cboGenero.Name = "cboGenero";
+            cboGenero.Size = new Size(194, 40);
+            cboGenero.TabIndex = 27;
             // 
-            // comboBox2
+            // cboEstadoC
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Casado", "Soltero" });
-            comboBox2.Location = new Point(1342, 201);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(194, 40);
-            comboBox2.TabIndex = 28;
+            cboEstadoC.FormattingEnabled = true;
+            cboEstadoC.Items.AddRange(new object[] { "Casado", "Soltero" });
+            cboEstadoC.Location = new Point(1342, 201);
+            cboEstadoC.Name = "cboEstadoC";
+            cboEstadoC.Size = new Size(194, 40);
+            cboEstadoC.TabIndex = 28;
             // 
-            // textBox9
+            // txtDireccion
             // 
-            textBox9.Location = new Point(798, 289);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(251, 39);
-            textBox9.TabIndex = 29;
+            txtDireccion.Location = new Point(798, 289);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(251, 39);
+            txtDireccion.TabIndex = 29;
             // 
             // label18
             // 
@@ -337,35 +338,35 @@
             label20.TabIndex = 32;
             label20.Text = "Estado laboral:";
             // 
-            // comboBox3
+            // cboEstadoL
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Activo", "Inactivo" });
-            comboBox3.Location = new Point(808, 255);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(194, 40);
-            comboBox3.TabIndex = 33;
+            cboEstadoL.FormattingEnabled = true;
+            cboEstadoL.Items.AddRange(new object[] { "Activo", "Inactivo" });
+            cboEstadoL.Location = new Point(808, 255);
+            cboEstadoL.Name = "cboEstadoL";
+            cboEstadoL.Size = new Size(194, 40);
+            cboEstadoL.TabIndex = 33;
             // 
-            // textBox10
+            // txtSalario
             // 
-            textBox10.Location = new Point(238, 158);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(251, 39);
-            textBox10.TabIndex = 34;
+            txtSalario.Location = new Point(238, 158);
+            txtSalario.Name = "txtSalario";
+            txtSalario.Size = new Size(251, 39);
+            txtSalario.TabIndex = 34;
             // 
-            // textBox11
+            // txtTelefono
             // 
-            textBox11.Location = new Point(270, 207);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(251, 39);
-            textBox11.TabIndex = 35;
+            txtTelefono.Location = new Point(270, 207);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(251, 39);
+            txtTelefono.TabIndex = 35;
             // 
-            // textBox12
+            // txtCelular
             // 
-            textBox12.Location = new Point(798, 207);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(251, 39);
-            textBox12.TabIndex = 36;
+            txtCelular.Location = new Point(798, 207);
+            txtCelular.Name = "txtCelular";
+            txtCelular.Size = new Size(251, 39);
+            txtCelular.TabIndex = 36;
             // 
             // dateTimePicker2
             // 
@@ -383,10 +384,10 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(btnLimpiar);
+            groupBox1.Controls.Add(btnNomina);
+            groupBox1.Controls.Add(btnRegistro);
+            groupBox1.Controls.Add(btnGuardar);
             groupBox1.Location = new Point(50, 951);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1602, 346);
@@ -395,55 +396,55 @@
             groupBox1.Text = "OPCIONES";
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // button4
+            // btnLimpiar
             // 
-            button4.Location = new Point(886, 61);
-            button4.Name = "button4";
-            button4.Size = new Size(611, 119);
-            button4.TabIndex = 3;
-            button4.Text = "NUEVOS DATOS";
-            button4.UseVisualStyleBackColor = true;
+            btnLimpiar.Location = new Point(886, 61);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(611, 119);
+            btnLimpiar.TabIndex = 3;
+            btnLimpiar.Text = "NUEVOS DATOS";
+            btnLimpiar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnNomina
             // 
-            button3.Location = new Point(46, 207);
-            button3.Name = "button3";
-            button3.Size = new Size(631, 119);
-            button3.TabIndex = 2;
-            button3.Text = "NOMINA";
-            button3.UseVisualStyleBackColor = true;
+            btnNomina.Location = new Point(46, 207);
+            btnNomina.Name = "btnNomina";
+            btnNomina.Size = new Size(631, 119);
+            btnNomina.TabIndex = 2;
+            btnNomina.Text = "NOMINA";
+            btnNomina.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRegistro
             // 
-            button2.Location = new Point(886, 207);
-            button2.Name = "button2";
-            button2.Size = new Size(611, 119);
-            button2.TabIndex = 1;
-            button2.Text = "VER REGISTRO";
-            button2.UseVisualStyleBackColor = true;
+            btnRegistro.Location = new Point(886, 207);
+            btnRegistro.Name = "btnRegistro";
+            btnRegistro.Size = new Size(611, 119);
+            btnRegistro.TabIndex = 1;
+            btnRegistro.Text = "VER REGISTRO";
+            btnRegistro.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnGuardar
             // 
-            button1.Location = new Point(46, 61);
-            button1.Name = "button1";
-            button1.Size = new Size(631, 119);
-            button1.TabIndex = 0;
-            button1.Text = "GUARDAR DATOS";
-            button1.UseVisualStyleBackColor = true;
+            btnGuardar.Location = new Point(46, 61);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(631, 119);
+            btnGuardar.TabIndex = 0;
+            btnGuardar.Text = "GUARDAR DATOS";
+            btnGuardar.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox12);
-            groupBox2.Controls.Add(textBox11);
-            groupBox2.Controls.Add(textBox9);
-            groupBox2.Controls.Add(comboBox2);
-            groupBox2.Controls.Add(comboBox1);
+            groupBox2.Controls.Add(txtCelular);
+            groupBox2.Controls.Add(txtTelefono);
+            groupBox2.Controls.Add(txtDireccion);
+            groupBox2.Controls.Add(cboEstadoC);
+            groupBox2.Controls.Add(cboGenero);
             groupBox2.Controls.Add(dateTimePicker1);
-            groupBox2.Controls.Add(textBox8);
-            groupBox2.Controls.Add(textBox7);
-            groupBox2.Controls.Add(textBox6);
-            groupBox2.Controls.Add(textBox4);
-            groupBox2.Controls.Add(textBox5);
+            groupBox2.Controls.Add(txtPrimerNombre);
+            groupBox2.Controls.Add(txtSegundoNombre);
+            groupBox2.Controls.Add(txtPrimerApellido);
+            groupBox2.Controls.Add(txtCedula);
+            groupBox2.Controls.Add(txtSegundoApellido);
             groupBox2.Controls.Add(label15);
             groupBox2.Controls.Add(label14);
             groupBox2.Controls.Add(label13);
@@ -466,16 +467,16 @@
             // 
             groupBox3.Controls.Add(dateTimePicker3);
             groupBox3.Controls.Add(dateTimePicker2);
-            groupBox3.Controls.Add(textBox10);
+            groupBox3.Controls.Add(txtSalario);
             groupBox3.Controls.Add(label17);
-            groupBox3.Controls.Add(comboBox3);
+            groupBox3.Controls.Add(cboEstadoL);
             groupBox3.Controls.Add(label5);
             groupBox3.Controls.Add(label20);
             groupBox3.Controls.Add(label19);
             groupBox3.Controls.Add(label18);
-            groupBox3.Controls.Add(textBox3);
-            groupBox3.Controls.Add(textBox2);
-            groupBox3.Controls.Add(textBox1);
+            groupBox3.Controls.Add(txtINSS);
+            groupBox3.Controls.Add(txtRuc);
+            groupBox3.Controls.Add(txtNumEmpleado);
             groupBox3.Controls.Add(label4);
             groupBox3.Controls.Add(label2);
             groupBox3.Location = new Point(41, 562);
@@ -523,32 +524,32 @@
         private Label label14;
         private Label label15;
         private Label label17;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
+        private TextBox txtNumEmpleado;
+        private TextBox txtRuc;
+        private TextBox txtINSS;
+        private TextBox txtCedula;
+        private TextBox txtSegundoApellido;
+        private TextBox txtPrimerApellido;
+        private TextBox txtSegundoNombre;
+        private TextBox txtPrimerNombre;
         private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private TextBox textBox9;
+        private ComboBox cboGenero;
+        private ComboBox cboEstadoC;
+        private TextBox txtDireccion;
         private Label label18;
         private Label label19;
         private Label label20;
-        private ComboBox comboBox3;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
+        private ComboBox cboEstadoL;
+        private TextBox txtSalario;
+        private TextBox txtTelefono;
+        private TextBox txtCelular;
         private DateTimePicker dateTimePicker2;
         private DateTimePicker dateTimePicker3;
         private GroupBox groupBox1;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button button4;
+        private Button btnNomina;
+        private Button btnRegistro;
+        private Button btnGuardar;
+        private Button btnLimpiar;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
     }
