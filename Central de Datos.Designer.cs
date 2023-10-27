@@ -65,23 +65,23 @@
             txtCelular = new TextBox();
             dateTimePicker2 = new DateTimePicker();
             dateTimePicker3 = new DateTimePicker();
-            groupBox1 = new GroupBox();
             btnLimpiar = new Button();
             btnNomina = new Button();
             btnRegistro = new Button();
-            btnGuardar = new Button();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
-            groupBox1.SuspendLayout();
+            PanelOpciones = new Panel();
+            btnGuardar = new Button();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
+            PanelOpciones.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(411, 44);
+            label1.Location = new Point(788, 41);
             label1.Name = "label1";
             label1.Size = new Size(902, 65);
             label1.TabIndex = 0;
@@ -99,7 +99,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(9, 289);
+            label3.Location = new Point(6, 237);
             label3.Name = "label3";
             label3.Size = new Size(218, 32);
             label3.TabIndex = 2;
@@ -144,7 +144,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(9, 121);
+            label8.Location = new Point(14, 98);
             label8.Name = "label8";
             label8.Size = new Size(180, 32);
             label8.TabIndex = 7;
@@ -153,7 +153,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(554, 121);
+            label9.Location = new Point(561, 105);
             label9.Name = "label9";
             label9.Size = new Size(207, 32);
             label9.TabIndex = 8;
@@ -189,7 +189,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(554, 289);
+            label13.Location = new Point(554, 244);
             label13.Name = "label13";
             label13.Size = new Size(119, 32);
             label13.TabIndex = 12;
@@ -198,7 +198,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(9, 207);
+            label14.Location = new Point(14, 169);
             label14.Name = "label14";
             label14.Size = new Size(112, 32);
             label14.TabIndex = 13;
@@ -207,7 +207,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(554, 207);
+            label15.Location = new Point(554, 173);
             label15.Name = "label15";
             label15.Size = new Size(93, 32);
             label15.TabIndex = 14;
@@ -245,21 +245,21 @@
             // 
             // txtCedula
             // 
-            txtCedula.Location = new Point(270, 289);
+            txtCedula.Location = new Point(270, 237);
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new Size(251, 39);
             txtCedula.TabIndex = 21;
             // 
             // txtSegundoApellido
             // 
-            txtSegundoApellido.Location = new Point(798, 118);
+            txtSegundoApellido.Location = new Point(798, 105);
             txtSegundoApellido.Name = "txtSegundoApellido";
             txtSegundoApellido.Size = new Size(251, 39);
             txtSegundoApellido.TabIndex = 22;
             // 
             // txtPrimerApellido
             // 
-            txtPrimerApellido.Location = new Point(270, 121);
+            txtPrimerApellido.Location = new Point(270, 98);
             txtPrimerApellido.Name = "txtPrimerApellido";
             txtPrimerApellido.Size = new Size(251, 39);
             txtPrimerApellido.TabIndex = 23;
@@ -306,7 +306,7 @@
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(798, 289);
+            txtDireccion.Location = new Point(798, 244);
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new Size(251, 39);
             txtDireccion.TabIndex = 29;
@@ -356,14 +356,14 @@
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(270, 207);
+            txtTelefono.Location = new Point(270, 166);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(251, 39);
             txtTelefono.TabIndex = 35;
             // 
             // txtCelular
             // 
-            txtCelular.Location = new Point(798, 207);
+            txtCelular.Location = new Point(798, 173);
             txtCelular.Name = "txtCelular";
             txtCelular.Size = new Size(251, 39);
             txtCelular.TabIndex = 36;
@@ -382,55 +382,52 @@
             dateTimePicker3.Size = new Size(194, 39);
             dateTimePicker3.TabIndex = 38;
             // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(btnLimpiar);
-            groupBox1.Controls.Add(btnNomina);
-            groupBox1.Controls.Add(btnRegistro);
-            groupBox1.Controls.Add(btnGuardar);
-            groupBox1.Location = new Point(50, 951);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1602, 346);
-            groupBox1.TabIndex = 39;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "OPCIONES";
-            groupBox1.Enter += groupBox1_Enter;
-            // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(886, 61);
+            btnLimpiar.Cursor = Cursors.Hand;
+            btnLimpiar.FlatAppearance.BorderSize = 0;
+            btnLimpiar.FlatStyle = FlatStyle.Flat;
+            btnLimpiar.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLimpiar.ForeColor = SystemColors.ButtonHighlight;
+            btnLimpiar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLimpiar.Location = new Point(3, 278);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(611, 119);
+            btnLimpiar.Size = new Size(444, 119);
             btnLimpiar.TabIndex = 3;
             btnLimpiar.Text = "NUEVOS DATOS";
             btnLimpiar.UseVisualStyleBackColor = true;
             // 
             // btnNomina
             // 
-            btnNomina.Location = new Point(46, 207);
+            btnNomina.Cursor = Cursors.Hand;
+            btnNomina.FlatAppearance.BorderSize = 0;
+            btnNomina.FlatStyle = FlatStyle.Flat;
+            btnNomina.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnNomina.ForeColor = SystemColors.ButtonHighlight;
+            btnNomina.Image = Properties.Resources.Nomina1;
+            btnNomina.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNomina.Location = new Point(0, 675);
             btnNomina.Name = "btnNomina";
-            btnNomina.Size = new Size(631, 119);
+            btnNomina.Size = new Size(447, 119);
             btnNomina.TabIndex = 2;
             btnNomina.Text = "NOMINA";
             btnNomina.UseVisualStyleBackColor = true;
             // 
             // btnRegistro
             // 
-            btnRegistro.Location = new Point(886, 207);
+            btnRegistro.Cursor = Cursors.Hand;
+            btnRegistro.FlatAppearance.BorderSize = 0;
+            btnRegistro.FlatStyle = FlatStyle.Flat;
+            btnRegistro.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRegistro.ForeColor = SystemColors.ButtonHighlight;
+            btnRegistro.Image = Properties.Resources.registro__2_;
+            btnRegistro.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRegistro.Location = new Point(3, 481);
             btnRegistro.Name = "btnRegistro";
-            btnRegistro.Size = new Size(611, 119);
+            btnRegistro.Size = new Size(444, 119);
             btnRegistro.TabIndex = 1;
             btnRegistro.Text = "VER REGISTRO";
             btnRegistro.UseVisualStyleBackColor = true;
-            // 
-            // btnGuardar
-            // 
-            btnGuardar.Location = new Point(46, 61);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(631, 119);
-            btnGuardar.TabIndex = 0;
-            btnGuardar.Text = "GUARDAR DATOS";
-            btnGuardar.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -456,9 +453,9 @@
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
-            groupBox2.Location = new Point(41, 146);
+            groupBox2.Location = new Point(483, 152);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1611, 354);
+            groupBox2.Size = new Size(1611, 304);
             groupBox2.TabIndex = 40;
             groupBox2.TabStop = false;
             groupBox2.Text = "DATOS PERSONALES";
@@ -479,29 +476,59 @@
             groupBox3.Controls.Add(txtNumEmpleado);
             groupBox3.Controls.Add(label4);
             groupBox3.Controls.Add(label2);
-            groupBox3.Location = new Point(41, 562);
+            groupBox3.Location = new Point(483, 499);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(1611, 351);
             groupBox3.TabIndex = 41;
             groupBox3.TabStop = false;
             groupBox3.Text = "INFORMACION LABORAL";
             // 
+            // PanelOpciones
+            // 
+            PanelOpciones.BackColor = SystemColors.ControlDarkDark;
+            PanelOpciones.Controls.Add(btnGuardar);
+            PanelOpciones.Controls.Add(btnRegistro);
+            PanelOpciones.Controls.Add(btnLimpiar);
+            PanelOpciones.Controls.Add(btnNomina);
+            PanelOpciones.Dock = DockStyle.Left;
+            PanelOpciones.Location = new Point(0, 0);
+            PanelOpciones.Name = "PanelOpciones";
+            PanelOpciones.Size = new Size(450, 879);
+            PanelOpciones.TabIndex = 42;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.Cursor = Cursors.Hand;
+            btnGuardar.FlatAppearance.BorderSize = 0;
+            btnGuardar.FlatStyle = FlatStyle.Flat;
+            btnGuardar.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGuardar.ForeColor = SystemColors.ButtonHighlight;
+            btnGuardar.Image = Properties.Resources.empleados;
+            btnGuardar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnGuardar.Location = new Point(3, 87);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(447, 106);
+            btnGuardar.TabIndex = 4;
+            btnGuardar.Text = "GUARDAR DATOS";
+            btnGuardar.UseVisualStyleBackColor = true;
+            // 
             // Central_de_Datos
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1720, 1335);
+            BackColor = Color.DarkCyan;
+            ClientSize = new Size(2127, 879);
+            Controls.Add(PanelOpciones);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
             Controls.Add(label1);
             Name = "Central_de_Datos";
             Text = "Central_de_Datos";
-            groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            PanelOpciones.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -545,12 +572,12 @@
         private TextBox txtCelular;
         private DateTimePicker dateTimePicker2;
         private DateTimePicker dateTimePicker3;
-        private GroupBox groupBox1;
         private Button btnNomina;
         private Button btnRegistro;
-        private Button btnGuardar;
         private Button btnLimpiar;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
+        private Panel PanelOpciones;
+        private Button btnGuardar;
     }
 }

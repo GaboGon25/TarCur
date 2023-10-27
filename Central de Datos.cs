@@ -17,21 +17,20 @@ namespace TarCur
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
 
-        }
 
         private void txtPrimerNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsDigit(e.KeyChar))
+            if (char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
                 MessageBox.Show("No se permiten numeros en este campo",
-                    "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 
         }
+
+
     }
 }
