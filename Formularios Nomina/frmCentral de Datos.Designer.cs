@@ -45,14 +45,14 @@
             label15 = new Label();
             label17 = new Label();
             txtNumEmpleado = new TextBox();
-            txtRuc = new TextBox();
-            txtINSS = new TextBox();
+            txtNumRUC = new TextBox();
+            txtNumINSS = new TextBox();
             txtCedula = new TextBox();
             txtSegundoApellido = new TextBox();
             txtPrimerApellido = new TextBox();
             txtSegundoNombre = new TextBox();
             txtPrimerNombre = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            dtpNacimiento = new DateTimePicker();
             cboGenero = new ComboBox();
             cboEstadoC = new ComboBox();
             txtDireccion = new TextBox();
@@ -60,11 +60,11 @@
             label19 = new Label();
             label20 = new Label();
             cboEstadoL = new ComboBox();
-            txtSalario = new TextBox();
+            txtSalarioOrdinario = new TextBox();
             txtTelefono = new TextBox();
             txtCelular = new TextBox();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker3 = new DateTimePicker();
+            dtpContratacion = new DateTimePicker();
+            dtpCierreContrato = new DateTimePicker();
             btnLimpiar = new Button();
             btnNomina = new Button();
             btnRegistro = new Button();
@@ -72,14 +72,35 @@
             groupBox3 = new GroupBox();
             PanelOpciones = new Panel();
             btnGuardar = new Button();
+            dgvRegistro = new DataGridView();
+            CNempleado = new DataGridViewTextBoxColumn();
+            CPnombre = new DataGridViewTextBoxColumn();
+            CSnombre = new DataGridViewTextBoxColumn();
+            CPapellido = new DataGridViewTextBoxColumn();
+            CSapellido = new DataGridViewTextBoxColumn();
+            CNtelefono = new DataGridViewTextBoxColumn();
+            CNcelular = new DataGridViewTextBoxColumn();
+            Ccedula = new DataGridViewTextBoxColumn();
+            Cdireccion = new DataGridViewTextBoxColumn();
+            CFnacimiento = new DataGridViewTextBoxColumn();
+            Csexo = new DataGridViewTextBoxColumn();
+            CEcivil = new DataGridViewTextBoxColumn();
+            CNruc = new DataGridViewTextBoxColumn();
+            CNinss = new DataGridViewTextBoxColumn();
+            Csalario = new DataGridViewTextBoxColumn();
+            CFcontratacion = new DataGridViewTextBoxColumn();
+            CFcierrecontrato = new DataGridViewTextBoxColumn();
+            CElaboral = new DataGridViewTextBoxColumn();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             PanelOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvRegistro).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(788, 41);
             label1.Name = "label1";
@@ -229,19 +250,19 @@
             txtNumEmpleado.Size = new Size(251, 39);
             txtNumEmpleado.TabIndex = 18;
             // 
-            // txtRuc
+            // txtNumRUC
             // 
-            txtRuc.Location = new Point(238, 45);
-            txtRuc.Name = "txtRuc";
-            txtRuc.Size = new Size(251, 39);
-            txtRuc.TabIndex = 19;
+            txtNumRUC.Location = new Point(238, 45);
+            txtNumRUC.Name = "txtNumRUC";
+            txtNumRUC.Size = new Size(251, 39);
+            txtNumRUC.TabIndex = 19;
             // 
-            // txtINSS
+            // txtNumINSS
             // 
-            txtINSS.Location = new Point(751, 52);
-            txtINSS.Name = "txtINSS";
-            txtINSS.Size = new Size(251, 39);
-            txtINSS.TabIndex = 20;
+            txtNumINSS.Location = new Point(751, 52);
+            txtNumINSS.Name = "txtNumINSS";
+            txtNumINSS.Size = new Size(251, 39);
+            txtNumINSS.TabIndex = 20;
             // 
             // txtCedula
             // 
@@ -279,12 +300,12 @@
             txtPrimerNombre.TabIndex = 25;
             txtPrimerNombre.KeyPress += txtPrimerNombre_KeyPress;
             // 
-            // dateTimePicker1
+            // dtpNacimiento
             // 
-            dateTimePicker1.Location = new Point(1342, 44);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(194, 39);
-            dateTimePicker1.TabIndex = 26;
+            dtpNacimiento.Location = new Point(1342, 44);
+            dtpNacimiento.Name = "dtpNacimiento";
+            dtpNacimiento.Size = new Size(194, 39);
+            dtpNacimiento.TabIndex = 26;
             // 
             // cboGenero
             // 
@@ -347,12 +368,12 @@
             cboEstadoL.Size = new Size(194, 40);
             cboEstadoL.TabIndex = 33;
             // 
-            // txtSalario
+            // txtSalarioOrdinario
             // 
-            txtSalario.Location = new Point(238, 158);
-            txtSalario.Name = "txtSalario";
-            txtSalario.Size = new Size(251, 39);
-            txtSalario.TabIndex = 34;
+            txtSalarioOrdinario.Location = new Point(238, 158);
+            txtSalarioOrdinario.Name = "txtSalarioOrdinario";
+            txtSalarioOrdinario.Size = new Size(251, 39);
+            txtSalarioOrdinario.TabIndex = 34;
             // 
             // txtTelefono
             // 
@@ -368,19 +389,19 @@
             txtCelular.Size = new Size(251, 39);
             txtCelular.TabIndex = 36;
             // 
-            // dateTimePicker2
+            // dtpContratacion
             // 
-            dateTimePicker2.Location = new Point(808, 156);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(194, 39);
-            dateTimePicker2.TabIndex = 37;
+            dtpContratacion.Location = new Point(808, 156);
+            dtpContratacion.Name = "dtpContratacion";
+            dtpContratacion.Size = new Size(194, 39);
+            dtpContratacion.TabIndex = 37;
             // 
-            // dateTimePicker3
+            // dtpCierreContrato
             // 
-            dateTimePicker3.Location = new Point(1370, 156);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(194, 39);
-            dateTimePicker3.TabIndex = 38;
+            dtpCierreContrato.Location = new Point(1370, 156);
+            dtpCierreContrato.Name = "dtpCierreContrato";
+            dtpCierreContrato.Size = new Size(194, 39);
+            dtpCierreContrato.TabIndex = 38;
             // 
             // btnLimpiar
             // 
@@ -436,7 +457,7 @@
             groupBox2.Controls.Add(txtDireccion);
             groupBox2.Controls.Add(cboEstadoC);
             groupBox2.Controls.Add(cboGenero);
-            groupBox2.Controls.Add(dateTimePicker1);
+            groupBox2.Controls.Add(dtpNacimiento);
             groupBox2.Controls.Add(txtPrimerNombre);
             groupBox2.Controls.Add(txtSegundoNombre);
             groupBox2.Controls.Add(txtPrimerApellido);
@@ -462,17 +483,17 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(dateTimePicker3);
-            groupBox3.Controls.Add(dateTimePicker2);
-            groupBox3.Controls.Add(txtSalario);
+            groupBox3.Controls.Add(dtpCierreContrato);
+            groupBox3.Controls.Add(dtpContratacion);
+            groupBox3.Controls.Add(txtSalarioOrdinario);
             groupBox3.Controls.Add(label17);
             groupBox3.Controls.Add(cboEstadoL);
             groupBox3.Controls.Add(label5);
             groupBox3.Controls.Add(label20);
             groupBox3.Controls.Add(label19);
             groupBox3.Controls.Add(label18);
-            groupBox3.Controls.Add(txtINSS);
-            groupBox3.Controls.Add(txtRuc);
+            groupBox3.Controls.Add(txtNumINSS);
+            groupBox3.Controls.Add(txtNumRUC);
             groupBox3.Controls.Add(txtNumEmpleado);
             groupBox3.Controls.Add(label4);
             groupBox3.Controls.Add(label2);
@@ -493,7 +514,7 @@
             PanelOpciones.Dock = DockStyle.Left;
             PanelOpciones.Location = new Point(0, 0);
             PanelOpciones.Name = "PanelOpciones";
-            PanelOpciones.Size = new Size(450, 879);
+            PanelOpciones.Size = new Size(450, 1427);
             PanelOpciones.TabIndex = 42;
             // 
             // btnGuardar
@@ -511,13 +532,152 @@
             btnGuardar.TabIndex = 4;
             btnGuardar.Text = "GUARDAR DATOS";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // dgvRegistro
+            // 
+            dgvRegistro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvRegistro.Columns.AddRange(new DataGridViewColumn[] { CNempleado, CPnombre, CSnombre, CPapellido, CSapellido, CNtelefono, CNcelular, Ccedula, Cdireccion, CFnacimiento, Csexo, CEcivil, CNruc, CNinss, Csalario, CFcontratacion, CFcierrecontrato, CElaboral });
+            dgvRegistro.Location = new Point(456, 887);
+            dgvRegistro.Name = "dgvRegistro";
+            dgvRegistro.RowHeadersWidth = 82;
+            dgvRegistro.RowTemplate.Height = 41;
+            dgvRegistro.Size = new Size(1659, 537);
+            dgvRegistro.TabIndex = 46;
+            // 
+            // CNempleado
+            // 
+            CNempleado.HeaderText = "Nº Empleado";
+            CNempleado.MinimumWidth = 10;
+            CNempleado.Name = "CNempleado";
+            CNempleado.Width = 200;
+            // 
+            // CPnombre
+            // 
+            CPnombre.HeaderText = "Primer Nombre";
+            CPnombre.MinimumWidth = 10;
+            CPnombre.Name = "CPnombre";
+            CPnombre.Width = 200;
+            // 
+            // CSnombre
+            // 
+            CSnombre.HeaderText = "Segundo Nombre";
+            CSnombre.MinimumWidth = 10;
+            CSnombre.Name = "CSnombre";
+            CSnombre.Width = 200;
+            // 
+            // CPapellido
+            // 
+            CPapellido.HeaderText = "Primer Apellido";
+            CPapellido.MinimumWidth = 10;
+            CPapellido.Name = "CPapellido";
+            CPapellido.Width = 200;
+            // 
+            // CSapellido
+            // 
+            CSapellido.HeaderText = "Segundo Apellido";
+            CSapellido.MinimumWidth = 10;
+            CSapellido.Name = "CSapellido";
+            CSapellido.Width = 200;
+            // 
+            // CNtelefono
+            // 
+            CNtelefono.HeaderText = "NºTelefono";
+            CNtelefono.MinimumWidth = 10;
+            CNtelefono.Name = "CNtelefono";
+            CNtelefono.Width = 200;
+            // 
+            // CNcelular
+            // 
+            CNcelular.HeaderText = "NºCelular";
+            CNcelular.MinimumWidth = 10;
+            CNcelular.Name = "CNcelular";
+            CNcelular.Width = 200;
+            // 
+            // Ccedula
+            // 
+            Ccedula.HeaderText = "Cedula";
+            Ccedula.MinimumWidth = 10;
+            Ccedula.Name = "Ccedula";
+            Ccedula.Width = 200;
+            // 
+            // Cdireccion
+            // 
+            Cdireccion.HeaderText = "Direccion";
+            Cdireccion.MinimumWidth = 10;
+            Cdireccion.Name = "Cdireccion";
+            Cdireccion.Width = 200;
+            // 
+            // CFnacimiento
+            // 
+            CFnacimiento.HeaderText = "Fecha Nacimiento";
+            CFnacimiento.MinimumWidth = 10;
+            CFnacimiento.Name = "CFnacimiento";
+            CFnacimiento.Width = 200;
+            // 
+            // Csexo
+            // 
+            Csexo.HeaderText = "Sexo";
+            Csexo.MinimumWidth = 10;
+            Csexo.Name = "Csexo";
+            Csexo.Width = 200;
+            // 
+            // CEcivil
+            // 
+            CEcivil.HeaderText = "Estado Civil";
+            CEcivil.MinimumWidth = 10;
+            CEcivil.Name = "CEcivil";
+            CEcivil.Width = 200;
+            // 
+            // CNruc
+            // 
+            CNruc.HeaderText = "Nº RUC";
+            CNruc.MinimumWidth = 10;
+            CNruc.Name = "CNruc";
+            CNruc.Width = 200;
+            // 
+            // CNinss
+            // 
+            CNinss.HeaderText = "Nº INSS";
+            CNinss.MinimumWidth = 10;
+            CNinss.Name = "CNinss";
+            CNinss.Width = 200;
+            // 
+            // Csalario
+            // 
+            Csalario.HeaderText = "Salario Ordinario";
+            Csalario.MinimumWidth = 10;
+            Csalario.Name = "Csalario";
+            Csalario.Width = 200;
+            // 
+            // CFcontratacion
+            // 
+            CFcontratacion.HeaderText = "Fecha de Contratacion";
+            CFcontratacion.MinimumWidth = 10;
+            CFcontratacion.Name = "CFcontratacion";
+            CFcontratacion.Width = 200;
+            // 
+            // CFcierrecontrato
+            // 
+            CFcierrecontrato.HeaderText = "Fecha de Cierre de Contrato";
+            CFcierrecontrato.MinimumWidth = 10;
+            CFcierrecontrato.Name = "CFcierrecontrato";
+            CFcierrecontrato.Width = 200;
+            // 
+            // CElaboral
+            // 
+            CElaboral.HeaderText = "Estado Laboral";
+            CElaboral.MinimumWidth = 10;
+            CElaboral.Name = "CElaboral";
+            CElaboral.Width = 200;
             // 
             // Central_de_Datos
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkCyan;
-            ClientSize = new Size(2127, 879);
+            ClientSize = new Size(2127, 1427);
+            Controls.Add(dgvRegistro);
             Controls.Add(PanelOpciones);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
@@ -529,6 +689,7 @@
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             PanelOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvRegistro).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -551,27 +712,9 @@
         private Label label14;
         private Label label15;
         private Label label17;
-        private TextBox txtNumEmpleado;
-        private TextBox txtRuc;
-        private TextBox txtINSS;
-        private TextBox txtCedula;
-        private TextBox txtSegundoApellido;
-        private TextBox txtPrimerApellido;
-        private TextBox txtSegundoNombre;
-        private TextBox txtPrimerNombre;
-        private DateTimePicker dateTimePicker1;
-        private ComboBox cboGenero;
-        private ComboBox cboEstadoC;
-        private TextBox txtDireccion;
         private Label label18;
         private Label label19;
         private Label label20;
-        private ComboBox cboEstadoL;
-        private TextBox txtSalario;
-        private TextBox txtTelefono;
-        private TextBox txtCelular;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker3;
         private Button btnNomina;
         private Button btnRegistro;
         private Button btnLimpiar;
@@ -579,5 +722,42 @@
         private GroupBox groupBox3;
         private Panel PanelOpciones;
         private Button btnGuardar;
+        public TextBox txtNumRUC;
+        public TextBox txtNumINSS;
+        public TextBox txtCedula;
+        public TextBox txtSegundoApellido;
+        public TextBox txtPrimerApellido;
+        public TextBox txtSegundoNombre;
+        public TextBox txtPrimerNombre;
+        public DateTimePicker dtpNacimiento;
+        public ComboBox cboGenero;
+        public ComboBox cboEstadoC;
+        public TextBox txtDireccion;
+        public ComboBox cboEstadoL;
+        public TextBox txtSalarioOrdinario;
+        public TextBox txtTelefono;
+        public TextBox txtCelular;
+        public DateTimePicker dtpContratacion;
+        public TextBox txtNumEmpleado;
+        public DateTimePicker dtpCierreContrato;
+        private DataGridView dgvRegistro;
+        private DataGridViewTextBoxColumn CNempleado;
+        private DataGridViewTextBoxColumn CPnombre;
+        private DataGridViewTextBoxColumn CSnombre;
+        private DataGridViewTextBoxColumn CPapellido;
+        private DataGridViewTextBoxColumn CSapellido;
+        private DataGridViewTextBoxColumn CNtelefono;
+        private DataGridViewTextBoxColumn CNcelular;
+        private DataGridViewTextBoxColumn Ccedula;
+        private DataGridViewTextBoxColumn Cdireccion;
+        private DataGridViewTextBoxColumn CFnacimiento;
+        private DataGridViewTextBoxColumn Csexo;
+        private DataGridViewTextBoxColumn CEcivil;
+        private DataGridViewTextBoxColumn CNruc;
+        private DataGridViewTextBoxColumn CNinss;
+        private DataGridViewTextBoxColumn Csalario;
+        private DataGridViewTextBoxColumn CFcontratacion;
+        private DataGridViewTextBoxColumn CFcierrecontrato;
+        private DataGridViewTextBoxColumn CElaboral;
     }
 }
