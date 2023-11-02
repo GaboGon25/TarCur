@@ -73,6 +73,16 @@ namespace TarCur.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login_935679 {
+            get {
+                object obj = ResourceManager.GetObject("login-935679", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Nomina {
             get {
                 object obj = ResourceManager.GetObject("Nomina", resourceCulture);
@@ -96,6 +106,27 @@ namespace TarCur.Properties {
         internal static System.Drawing.Bitmap other {
             get {
                 object obj = ResourceManager.GetObject("other", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_login_management_user_others_miscellaneous_service_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-login-management-user-others-miscellaneous-service-thu" +
+                        "mbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R {
+            get {
+                object obj = ResourceManager.GetObject("R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

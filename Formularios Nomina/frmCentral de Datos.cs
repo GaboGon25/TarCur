@@ -28,12 +28,9 @@ namespace TarCur
                 e.Handled = true;
                 MessageBox.Show("No se permiten numeros en este campo",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
 
         }
-
-
 
         public void CaptarDatos()
         {
