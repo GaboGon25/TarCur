@@ -27,6 +27,7 @@ namespace TarCur
         public DateTime CierreContrato { get; set; }
         public string EstadoLaboral { get; set; }
         public double Antiguedad { get; set; }
+        public int AñosTrabajados { get; set; }
         public double RiesgoLaboral { get; set; }
         public double Nocturnidad { get; set; }
         public int HorasExtras { get; set; }

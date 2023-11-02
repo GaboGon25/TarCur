@@ -19,9 +19,11 @@ namespace TarCur
             InitializeComponent();
         }
 
+        // IMPORTANTE : de momento el login estara desactivado para no dificultar probar lo que vamos añadiendo
+        // se activara al presentar el trabajo, el login ya esta totalmente hecho y probado.
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            string path = "C:\\Users\\Kevin Muñoz\\source\\repos\\TarCur\\credenciales.txt";
+            string path = "C:\\Users\\Dell\\source\\repos\\GaboGon25\\TarCur\\credenciales.txt";
             if (File.Exists(path))
             {
                 string[] lines = File.ReadAllLines(path);
