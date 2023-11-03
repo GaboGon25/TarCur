@@ -74,8 +74,14 @@ namespace TarCur
 
         public virtual double CalculaTotalIngresos()
         {
-            double totalIngresos = SalarioBase+CalculaRiesgoLaboral() + CalculaNocturnidad() + CalculaPagoHorasExtras() + CalculaAntiguedad();
+            double totalIngresos = CalculaRiesgoLaboral() + CalculaNocturnidad() + CalculaPagoHorasExtras() + CalculaAntiguedad();
             return totalIngresos;
+        }
+
+        public virtual double SalarioBruto()
+        {
+            double salarioBruto = CalculaTotalIngresos()+ SalarioBase;
+            return salarioBruto;
         }
 
         // Calculos de las Deducciones

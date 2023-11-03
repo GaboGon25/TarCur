@@ -71,6 +71,7 @@
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
             PanelOpciones = new Panel();
+            button1 = new Button();
             btnGuardar = new Button();
             dgvRegistro = new DataGridView();
             CNempleado = new DataGridViewTextBoxColumn();
@@ -417,6 +418,7 @@
             btnLimpiar.TabIndex = 3;
             btnLimpiar.Text = "NUEVOS DATOS";
             btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnNomina
             // 
@@ -427,12 +429,13 @@
             btnNomina.ForeColor = SystemColors.ButtonHighlight;
             btnNomina.Image = Properties.Resources.Nomina1;
             btnNomina.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNomina.Location = new Point(0, 675);
+            btnNomina.Location = new Point(3, 712);
             btnNomina.Name = "btnNomina";
             btnNomina.Size = new Size(447, 119);
             btnNomina.TabIndex = 2;
-            btnNomina.Text = "NOMINA";
+            btnNomina.Text = "NOMINA MENSUAL";
             btnNomina.UseVisualStyleBackColor = true;
+            btnNomina.Click += btnNomina_Click;
             // 
             // btnRegistro
             // 
@@ -507,6 +510,7 @@
             // PanelOpciones
             // 
             PanelOpciones.BackColor = SystemColors.ControlDarkDark;
+            PanelOpciones.Controls.Add(button1);
             PanelOpciones.Controls.Add(btnGuardar);
             PanelOpciones.Controls.Add(btnRegistro);
             PanelOpciones.Controls.Add(btnLimpiar);
@@ -516,6 +520,23 @@
             PanelOpciones.Name = "PanelOpciones";
             PanelOpciones.Size = new Size(450, 1427);
             PanelOpciones.TabIndex = 42;
+            // 
+            // button1
+            // 
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Image = Properties.Resources.Nomina1;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 956);
+            button1.Name = "button1";
+            button1.Size = new Size(447, 119);
+            button1.TabIndex = 5;
+            button1.Text = "NOMINA SEMANAL";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // btnGuardar
             // 
@@ -759,5 +780,6 @@
         private DataGridViewTextBoxColumn CFcontratacion;
         private DataGridViewTextBoxColumn CFcierrecontrato;
         private DataGridViewTextBoxColumn CElaboral;
+        private Button button1;
     }
 }

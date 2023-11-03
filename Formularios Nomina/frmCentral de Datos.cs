@@ -54,9 +54,51 @@ namespace TarCur
             empleado.EstadoLaboral = cboEstadoL.Text;
         }
 
+        public void GuardarDatos()
+        {
+            dgvRegistro.Rows.Add(txtNumEmpleado.Text, txtPrimerNombre.Text, txtSegundoNombre.Text, txtPrimerApellido.Text, txtSegundoApellido.Text, txtTelefono.Text, txtCelular.Text, txtCedula.Text, txtDireccion.Text, dtpNacimiento.Text, cboGenero.Text, cboEstadoC.Text, txtNumRUC.Text, txtNumINSS.Text, txtSalarioOrdinario.Text, dtpContratacion.Text, dtpCierreContrato.Text, cboEstadoL.Text);
+
+        }
+
+        public void BorrarDatos()
+        {
+            txtNumEmpleado.Clear();
+            txtPrimerNombre.Clear();
+            txtSegundoNombre.Clear();
+            txtPrimerApellido.Clear();
+            txtSegundoApellido.Clear();
+            txtTelefono.Clear();
+            txtCelular.Clear();
+            txtCedula.Clear();
+            txtDireccion.Clear();
+            txtNumRUC.Clear();
+            txtNumINSS.Clear();
+            txtSalarioOrdinario.Clear();
+
+
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            dgvRegistro.Rows.Add(txtNumEmpleado.Text, txtPrimerNombre.Text, txtSegundoNombre.Text, txtPrimerApellido.Text, txtSegundoApellido.Text,txtTelefono.Text,txtCelular.Text,txtCedula.Text,txtDireccion.Text,dtpNacimiento.Text,cboGenero.Text,cboEstadoC.Text,txtNumRUC.Text,txtNumINSS.Text,txtSalarioOrdinario.Text,dtpContratacion.Text,dtpCierreContrato.Text,cboEstadoL.Text);
+            GuardarDatos();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            BorrarDatos();
+
+        }
+
+        private void btnNomina_Click(object sender, EventArgs e)
+        {
+            frmNominaMensual frmNominaMensual = new frmNominaMensual();
+            frmNominaMensual.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmNominaSemanal frmNominaSemanal = new frmNominaSemanal();
+            frmNominaSemanal.ShowDialog();
         }
     }
 }
