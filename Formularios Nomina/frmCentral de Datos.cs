@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TarCur.Datos_y_Metodos;
 
 namespace TarCur
 {
@@ -20,16 +21,11 @@ namespace TarCur
             InitializeComponent();
         }
         Empleado empleado = new Empleado();
+        Validaciones validaciones = new Validaciones();
 
         private void txtPrimerNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-                MessageBox.Show("No se permiten numeros en este campo",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+            validaciones.ValidarLetras(txtPrimerNombre, e);
         }
 
         public void CaptarDatos()
