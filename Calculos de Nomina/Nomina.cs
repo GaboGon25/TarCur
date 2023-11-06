@@ -86,6 +86,73 @@ namespace TarCur
 
         // Calculos de las Deducciones
 
+        public virtual double CalculaINSS()
+        {
+            return SalarioBruto()*0.07;
+
+        }
+
+        public virtual double SalarioRestado()
+        {
+            return SalarioBruto()-CalculaINSS();
+        }
+
+        public virtual double SalarioAnual()
+        {
+            return SalarioRestado() * 12;
+        }
+
+        
+
+        public virtual double CalculaIR()
+        {
+            double Anual = SalarioAnual();
+            double IR = 0;
+
+            if (Anual>0.01 || Anual<100000.00 ) 
+            {
+                IR = 0;
+            }
+
+            else if(Anual > 100000.01 || Anual<200000.00)
+            {
+                double SobreExceso = 100000.00;
+                double Deducir1 = Anual - SobreExceso;
+                IR = (Deducir1 * 0.15)/12;
+            }
+            else if(Anual > 200000.01 || Anual<350000.00)
+            {
+                double SobreExceso2 = 200000.00;
+                double Deducir2 = Anual-SobreExceso2;
+                IR = ((Deducir2 * 0.2) + 15000.00) / 12;
+            }
+            else if(Anual > 350000.01 || Anual<500000.00)
+            {
+                double SobreExceso3 = 350000.00;
+                double Deducir3 = Anual-SobreExceso3;
+                IR = ((Deducir3 * 0.25) + 45000.00) / 12;
+            }
+            else if (Anual > 500000.01)
+            {
+                double SobreExceso4 = 500000.00;
+                double Deducir4 = Anual-SobreExceso4;
+                IR = ((Deducir4 * 0.3) + 82500);
+            }
+            return IR;
+        }
+
+        public virtual double CalculaTotalDeducciones()
+        {
+            double totalDeducciones = CalculaINSS()+CalculaIR();
+            return totalDeducciones;
+        }
+
+        public virtual double SalarioNeto()
+        {
+            double salarioNeto = SalarioBruto() - CalculaTotalDeducciones();
+            return salarioNeto;
+        }
+
         
         
             
