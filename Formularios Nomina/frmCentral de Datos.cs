@@ -96,5 +96,57 @@ namespace TarCur
             frmNominaSemanal frmNominaSemanal = new frmNominaSemanal();
             frmNominaSemanal.ShowDialog();
         }
+
+        private void txtSegundoNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarLetras(txtSegundoNombre, e);
+        }
+
+        private void txtPrimerApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarLetras(txtPrimerApellido, e);
+        }
+
+        private void txtSegundoApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarLetras(txtSegundoApellido, e);
+
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarNumeros(txtTelefono, e);
+        }
+
+        private void txtCelular_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarNumeros(txtCelular, e);
+        }
+
+        private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarLetras(txtDireccion, e);
+        }
+
+        private void txtSalarioOrdinario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarNumeros(txtSalarioOrdinario, e);
+        }
+
+        private void txtNumRUC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarNumeros(txtNumRUC, e);
+
+        }
+
+        private void txtNumINSS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarNumeros(txtNumINSS, e);
+        }
+
+        private void txtNumEmpleado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaciones.ValidarNumeros(txtNumEmpleado, e);
+        }
     }
 }

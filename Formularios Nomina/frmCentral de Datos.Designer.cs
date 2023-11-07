@@ -250,6 +250,7 @@
             txtNumEmpleado.Name = "txtNumEmpleado";
             txtNumEmpleado.Size = new Size(251, 39);
             txtNumEmpleado.TabIndex = 18;
+            txtNumEmpleado.KeyPress += txtNumEmpleado_KeyPress;
             // 
             // txtNumRUC
             // 
@@ -257,6 +258,7 @@
             txtNumRUC.Name = "txtNumRUC";
             txtNumRUC.Size = new Size(251, 39);
             txtNumRUC.TabIndex = 19;
+            txtNumRUC.KeyPress += txtNumRUC_KeyPress;
             // 
             // txtNumINSS
             // 
@@ -264,6 +266,7 @@
             txtNumINSS.Name = "txtNumINSS";
             txtNumINSS.Size = new Size(251, 39);
             txtNumINSS.TabIndex = 20;
+            txtNumINSS.KeyPress += txtNumINSS_KeyPress;
             // 
             // txtCedula
             // 
@@ -278,6 +281,7 @@
             txtSegundoApellido.Name = "txtSegundoApellido";
             txtSegundoApellido.Size = new Size(251, 39);
             txtSegundoApellido.TabIndex = 22;
+            txtSegundoApellido.KeyPress += txtSegundoApellido_KeyPress;
             // 
             // txtPrimerApellido
             // 
@@ -285,6 +289,7 @@
             txtPrimerApellido.Name = "txtPrimerApellido";
             txtPrimerApellido.Size = new Size(251, 39);
             txtPrimerApellido.TabIndex = 23;
+            txtPrimerApellido.KeyPress += txtPrimerApellido_KeyPress;
             // 
             // txtSegundoNombre
             // 
@@ -292,6 +297,7 @@
             txtSegundoNombre.Name = "txtSegundoNombre";
             txtSegundoNombre.Size = new Size(251, 39);
             txtSegundoNombre.TabIndex = 24;
+            txtSegundoNombre.KeyPress += txtSegundoNombre_KeyPress;
             // 
             // txtPrimerNombre
             // 
@@ -332,6 +338,7 @@
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new Size(251, 39);
             txtDireccion.TabIndex = 29;
+            txtDireccion.KeyPress += txtDireccion_KeyPress;
             // 
             // label18
             // 
@@ -375,6 +382,7 @@
             txtSalarioOrdinario.Name = "txtSalarioOrdinario";
             txtSalarioOrdinario.Size = new Size(251, 39);
             txtSalarioOrdinario.TabIndex = 34;
+            txtSalarioOrdinario.KeyPress += txtSalarioOrdinario_KeyPress;
             // 
             // txtTelefono
             // 
@@ -382,6 +390,7 @@
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(251, 39);
             txtTelefono.TabIndex = 35;
+            txtTelefono.KeyPress += txtTelefono_KeyPress;
             // 
             // txtCelular
             // 
@@ -389,6 +398,7 @@
             txtCelular.Name = "txtCelular";
             txtCelular.Size = new Size(251, 39);
             txtCelular.TabIndex = 36;
+            txtCelular.KeyPress += txtCelular_KeyPress;
             // 
             // dtpContratacion
             // 
