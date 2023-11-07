@@ -16,5 +16,18 @@ namespace TarCur
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            
+                {
+
+            }
+        }
     }
 }

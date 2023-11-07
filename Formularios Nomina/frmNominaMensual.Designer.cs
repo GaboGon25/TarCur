@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dgvNominaMensual = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -48,22 +48,24 @@
             btnCalcular = new Button();
             btnExportar = new Button();
             groupBox1 = new GroupBox();
-            label1 = new Label();
             txtheTrabajadasNM = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvNominaMensual).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvNominaMensual
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10, Column11, Column12, Column13, Column14, Column15, Column16 });
-            dataGridView1.Location = new Point(62, 281);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.RowTemplate.Height = 41;
-            dataGridView1.Size = new Size(1735, 446);
-            dataGridView1.TabIndex = 0;
+            dgvNominaMensual.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvNominaMensual.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10, Column11, Column12, Column13, Column14, Column15, Column16 });
+            dgvNominaMensual.Location = new Point(11, 172);
+            dgvNominaMensual.Margin = new Padding(2);
+            dgvNominaMensual.Name = "dgvNominaMensual";
+            dgvNominaMensual.RowHeadersWidth = 82;
+            dgvNominaMensual.RowTemplate.Height = 41;
+            dgvNominaMensual.Size = new Size(1092, 369);
+            dgvNominaMensual.TabIndex = 0;
+            dgvNominaMensual.CellContentClick += dgvNominaMensual_CellContentClick;
             // 
             // Column1
             // 
@@ -179,18 +181,20 @@
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(1249, 57);
+            btnCalcular.Location = new Point(522, 23);
+            btnCalcular.Margin = new Padding(2);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(274, 132);
+            btnCalcular.Size = new Size(169, 82);
             btnCalcular.TabIndex = 1;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = true;
             // 
             // btnExportar
             // 
-            btnExportar.Location = new Point(1529, 57);
+            btnExportar.Location = new Point(791, 23);
+            btnExportar.Margin = new Padding(2);
             btnExportar.Name = "btnExportar";
-            btnExportar.Size = new Size(268, 132);
+            btnExportar.Size = new Size(165, 82);
             btnExportar.TabIndex = 2;
             btnExportar.Text = "EXPORTAR";
             btnExportar.UseVisualStyleBackColor = true;
@@ -199,41 +203,46 @@
             // 
             groupBox1.Controls.Add(txtheTrabajadasNM);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(670, 79);
+            groupBox1.Location = new Point(28, 36);
+            groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(549, 110);
+            groupBox1.Padding = new Padding(2);
+            groupBox1.Size = new Size(338, 69);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "OTROS DATOS";
             // 
+            // txtheTrabajadasNM
+            // 
+            txtheTrabajadasNM.Location = new Point(173, 31);
+            txtheTrabajadasNM.Margin = new Padding(2);
+            txtheTrabajadasNM.Name = "txtheTrabajadasNM";
+            txtheTrabajadasNM.Size = new Size(150, 27);
+            txtheTrabajadasNM.TabIndex = 1;
+            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(15, 52);
+            label1.Location = new Point(9, 32);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(259, 32);
+            label1.Size = new Size(165, 20);
             label1.TabIndex = 0;
             label1.Text = "Horas extras trabajadas";
             // 
-            // txtheTrabajadasNM
-            // 
-            txtheTrabajadasNM.Location = new Point(281, 49);
-            txtheTrabajadasNM.Name = "txtheTrabajadasNM";
-            txtheTrabajadasNM.Size = new Size(242, 39);
-            txtheTrabajadasNM.TabIndex = 1;
-            // 
             // frmNominaMensual
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1836, 747);
+            ClientSize = new Size(1137, 586);
             Controls.Add(groupBox1);
             Controls.Add(btnExportar);
             Controls.Add(btnCalcular);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvNominaMensual);
+            Margin = new Padding(2);
             Name = "frmNominaMensual";
             Text = "frmNominaMensual";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvNominaMensual).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -241,7 +250,7 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvNominaMensual;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;

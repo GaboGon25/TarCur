@@ -136,7 +136,7 @@ namespace TarCur
             {
                 double SobreExceso4 = 500000.00;
                 double Deducir4 = Anual-SobreExceso4;
-                IR = ((Deducir4 * 0.3) + 82500);
+                IR = ((Deducir4 * 0.3) + 82500)/12;
             }
             return IR;
         }

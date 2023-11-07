@@ -16,5 +16,10 @@ namespace TarCur
         {
             InitializeComponent();
         }
+
+        private void dgvNominaMensual_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -92,6 +92,7 @@
             CFcontratacion = new DataGridViewTextBoxColumn();
             CFcierrecontrato = new DataGridViewTextBoxColumn();
             CElaboral = new DataGridViewTextBoxColumn();
+            btnExportar = new Button();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             PanelOpciones.SuspendLayout();
@@ -103,267 +104,298 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(788, 41);
+            label1.Location = new Point(485, 26);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(902, 65);
+            label1.Size = new Size(569, 41);
             label1.TabIndex = 0;
             label1.Text = "REGISTRO DE DATOS DE EMPLEADOS";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1046, 55);
+            label2.Location = new Point(644, 34);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(255, 32);
+            label2.Size = new Size(159, 20);
             label2.TabIndex = 1;
             label2.Text = "Numero de empleado:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(6, 237);
+            label3.Location = new Point(4, 148);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(218, 32);
+            label3.Size = new Size(135, 20);
             label3.TabIndex = 2;
             label3.Text = "Numero de cedula:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(562, 52);
+            label4.Location = new Point(346, 32);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(164, 32);
+            label4.Size = new Size(101, 20);
             label4.TabIndex = 3;
             label4.Text = "Numero INSS:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(35, 52);
+            label5.Location = new Point(22, 32);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(159, 32);
+            label5.Size = new Size(98, 20);
             label5.TabIndex = 4;
             label5.Text = "Numero RUC:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(9, 41);
+            label6.Location = new Point(6, 26);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(179, 32);
+            label6.Size = new Size(111, 20);
             label6.TabIndex = 5;
             label6.Text = "Primer nombre:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(562, 37);
+            label7.Location = new Point(346, 23);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(206, 32);
+            label7.Size = new Size(127, 20);
             label7.TabIndex = 6;
             label7.Text = "Segundo nombre:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(14, 98);
+            label8.Location = new Point(9, 61);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(180, 32);
+            label8.Size = new Size(114, 20);
             label8.TabIndex = 7;
             label8.Text = "Primer apellido:";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(561, 105);
+            label9.Location = new Point(345, 66);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(207, 32);
+            label9.Size = new Size(130, 20);
             label9.TabIndex = 8;
             label9.Text = "Segundo apellido:";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(1070, 44);
+            label10.Location = new Point(658, 28);
+            label10.Margin = new Padding(2, 0, 2, 0);
             label10.Name = "label10";
-            label10.Size = new Size(245, 32);
+            label10.Size = new Size(152, 20);
             label10.TabIndex = 9;
             label10.Text = "Fecha de Nacimiento:";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(1070, 125);
+            label11.Location = new Point(658, 78);
+            label11.Margin = new Padding(2, 0, 2, 0);
             label11.Name = "label11";
-            label11.Size = new Size(70, 32);
+            label11.Size = new Size(44, 20);
             label11.TabIndex = 10;
             label11.Text = "Sexo:";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(1070, 209);
+            label12.Location = new Point(658, 131);
+            label12.Margin = new Padding(2, 0, 2, 0);
             label12.Name = "label12";
-            label12.Size = new Size(137, 32);
+            label12.Size = new Size(87, 20);
             label12.TabIndex = 11;
             label12.Text = "Estado civil:";
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(554, 244);
+            label13.Location = new Point(341, 152);
+            label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(119, 32);
+            label13.Size = new Size(75, 20);
             label13.TabIndex = 12;
             label13.Text = "Direccion:";
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(14, 169);
+            label14.Location = new Point(9, 106);
+            label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(112, 32);
+            label14.Size = new Size(70, 20);
             label14.TabIndex = 13;
             label14.Text = "Telefono:";
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(554, 173);
+            label15.Location = new Point(341, 108);
+            label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
-            label15.Size = new Size(93, 32);
+            label15.Size = new Size(58, 20);
             label15.TabIndex = 14;
             label15.Text = "Celular:";
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(35, 165);
+            label17.Location = new Point(22, 103);
+            label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
-            label17.Size = new Size(197, 32);
+            label17.Size = new Size(125, 20);
             label17.TabIndex = 16;
             label17.Text = "Salario Ordinario:";
             // 
             // txtNumEmpleado
             // 
-            txtNumEmpleado.Location = new Point(1313, 52);
+            txtNumEmpleado.Location = new Point(808, 32);
+            txtNumEmpleado.Margin = new Padding(2);
             txtNumEmpleado.Name = "txtNumEmpleado";
-            txtNumEmpleado.Size = new Size(251, 39);
+            txtNumEmpleado.Size = new Size(156, 27);
             txtNumEmpleado.TabIndex = 18;
             txtNumEmpleado.KeyPress += txtNumEmpleado_KeyPress;
             // 
             // txtNumRUC
             // 
-            txtNumRUC.Location = new Point(238, 45);
+            txtNumRUC.Location = new Point(146, 28);
+            txtNumRUC.Margin = new Padding(2);
             txtNumRUC.Name = "txtNumRUC";
-            txtNumRUC.Size = new Size(251, 39);
+            txtNumRUC.Size = new Size(156, 27);
             txtNumRUC.TabIndex = 19;
             txtNumRUC.KeyPress += txtNumRUC_KeyPress;
             // 
             // txtNumINSS
             // 
-            txtNumINSS.Location = new Point(751, 52);
+            txtNumINSS.Location = new Point(462, 32);
+            txtNumINSS.Margin = new Padding(2);
             txtNumINSS.Name = "txtNumINSS";
-            txtNumINSS.Size = new Size(251, 39);
+            txtNumINSS.Size = new Size(156, 27);
             txtNumINSS.TabIndex = 20;
             txtNumINSS.KeyPress += txtNumINSS_KeyPress;
             // 
             // txtCedula
             // 
-            txtCedula.Location = new Point(270, 237);
+            txtCedula.Location = new Point(166, 148);
+            txtCedula.Margin = new Padding(2);
             txtCedula.Name = "txtCedula";
-            txtCedula.Size = new Size(251, 39);
+            txtCedula.Size = new Size(156, 27);
             txtCedula.TabIndex = 21;
             // 
             // txtSegundoApellido
             // 
-            txtSegundoApellido.Location = new Point(798, 105);
+            txtSegundoApellido.Location = new Point(491, 66);
+            txtSegundoApellido.Margin = new Padding(2);
             txtSegundoApellido.Name = "txtSegundoApellido";
-            txtSegundoApellido.Size = new Size(251, 39);
+            txtSegundoApellido.Size = new Size(156, 27);
             txtSegundoApellido.TabIndex = 22;
             txtSegundoApellido.KeyPress += txtSegundoApellido_KeyPress;
             // 
             // txtPrimerApellido
             // 
-            txtPrimerApellido.Location = new Point(270, 98);
+            txtPrimerApellido.Location = new Point(166, 61);
+            txtPrimerApellido.Margin = new Padding(2);
             txtPrimerApellido.Name = "txtPrimerApellido";
-            txtPrimerApellido.Size = new Size(251, 39);
+            txtPrimerApellido.Size = new Size(156, 27);
             txtPrimerApellido.TabIndex = 23;
             txtPrimerApellido.KeyPress += txtPrimerApellido_KeyPress;
             // 
             // txtSegundoNombre
             // 
-            txtSegundoNombre.Location = new Point(798, 34);
+            txtSegundoNombre.Location = new Point(491, 21);
+            txtSegundoNombre.Margin = new Padding(2);
             txtSegundoNombre.Name = "txtSegundoNombre";
-            txtSegundoNombre.Size = new Size(251, 39);
+            txtSegundoNombre.Size = new Size(156, 27);
             txtSegundoNombre.TabIndex = 24;
             txtSegundoNombre.KeyPress += txtSegundoNombre_KeyPress;
             // 
             // txtPrimerNombre
             // 
-            txtPrimerNombre.Location = new Point(270, 34);
+            txtPrimerNombre.Location = new Point(166, 21);
+            txtPrimerNombre.Margin = new Padding(2);
             txtPrimerNombre.Name = "txtPrimerNombre";
-            txtPrimerNombre.Size = new Size(251, 39);
+            txtPrimerNombre.Size = new Size(156, 27);
             txtPrimerNombre.TabIndex = 25;
             txtPrimerNombre.KeyPress += txtPrimerNombre_KeyPress;
             // 
             // dtpNacimiento
             // 
-            dtpNacimiento.Location = new Point(1342, 44);
+            dtpNacimiento.Location = new Point(826, 28);
+            dtpNacimiento.Margin = new Padding(2);
             dtpNacimiento.Name = "dtpNacimiento";
-            dtpNacimiento.Size = new Size(194, 39);
+            dtpNacimiento.Size = new Size(121, 27);
             dtpNacimiento.TabIndex = 26;
             // 
             // cboGenero
             // 
             cboGenero.FormattingEnabled = true;
             cboGenero.Items.AddRange(new object[] { "Masculino", "Femenino" });
-            cboGenero.Location = new Point(1342, 125);
+            cboGenero.Location = new Point(826, 78);
+            cboGenero.Margin = new Padding(2);
             cboGenero.Name = "cboGenero";
-            cboGenero.Size = new Size(194, 40);
+            cboGenero.Size = new Size(121, 28);
             cboGenero.TabIndex = 27;
             // 
             // cboEstadoC
             // 
             cboEstadoC.FormattingEnabled = true;
             cboEstadoC.Items.AddRange(new object[] { "Casado", "Soltero" });
-            cboEstadoC.Location = new Point(1342, 201);
+            cboEstadoC.Location = new Point(826, 126);
+            cboEstadoC.Margin = new Padding(2);
             cboEstadoC.Name = "cboEstadoC";
-            cboEstadoC.Size = new Size(194, 40);
+            cboEstadoC.Size = new Size(121, 28);
             cboEstadoC.TabIndex = 28;
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(798, 244);
+            txtDireccion.Location = new Point(491, 152);
+            txtDireccion.Margin = new Padding(2);
             txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new Size(251, 39);
+            txtDireccion.Size = new Size(156, 27);
             txtDireccion.TabIndex = 29;
             txtDireccion.KeyPress += txtDireccion_KeyPress;
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(541, 158);
+            label18.Location = new Point(333, 99);
+            label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
-            label18.Size = new Size(220, 32);
+            label18.Size = new Size(137, 20);
             label18.TabIndex = 30;
             label18.Text = "Fecha contratacion:";
             // 
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(1046, 158);
+            label19.Location = new Point(644, 99);
+            label19.Margin = new Padding(2, 0, 2, 0);
             label19.Name = "label19";
-            label19.Size = new Size(311, 32);
+            label19.Size = new Size(193, 20);
             label19.TabIndex = 31;
             label19.Text = "Fecha de cierre de contrato:";
             // 
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(562, 263);
+            label20.Location = new Point(346, 164);
+            label20.Margin = new Padding(2, 0, 2, 0);
             label20.Name = "label20";
-            label20.Size = new Size(168, 32);
+            label20.Size = new Size(108, 20);
             label20.TabIndex = 32;
             label20.Text = "Estado laboral:";
             // 
@@ -371,47 +403,53 @@
             // 
             cboEstadoL.FormattingEnabled = true;
             cboEstadoL.Items.AddRange(new object[] { "Activo", "Inactivo" });
-            cboEstadoL.Location = new Point(808, 255);
+            cboEstadoL.Location = new Point(497, 159);
+            cboEstadoL.Margin = new Padding(2);
             cboEstadoL.Name = "cboEstadoL";
-            cboEstadoL.Size = new Size(194, 40);
+            cboEstadoL.Size = new Size(121, 28);
             cboEstadoL.TabIndex = 33;
             // 
             // txtSalarioOrdinario
             // 
-            txtSalarioOrdinario.Location = new Point(238, 158);
+            txtSalarioOrdinario.Location = new Point(146, 99);
+            txtSalarioOrdinario.Margin = new Padding(2);
             txtSalarioOrdinario.Name = "txtSalarioOrdinario";
-            txtSalarioOrdinario.Size = new Size(251, 39);
+            txtSalarioOrdinario.Size = new Size(156, 27);
             txtSalarioOrdinario.TabIndex = 34;
             txtSalarioOrdinario.KeyPress += txtSalarioOrdinario_KeyPress;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(270, 166);
+            txtTelefono.Location = new Point(166, 104);
+            txtTelefono.Margin = new Padding(2);
             txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new Size(251, 39);
+            txtTelefono.Size = new Size(156, 27);
             txtTelefono.TabIndex = 35;
             txtTelefono.KeyPress += txtTelefono_KeyPress;
             // 
             // txtCelular
             // 
-            txtCelular.Location = new Point(798, 173);
+            txtCelular.Location = new Point(491, 108);
+            txtCelular.Margin = new Padding(2);
             txtCelular.Name = "txtCelular";
-            txtCelular.Size = new Size(251, 39);
+            txtCelular.Size = new Size(156, 27);
             txtCelular.TabIndex = 36;
             txtCelular.KeyPress += txtCelular_KeyPress;
             // 
             // dtpContratacion
             // 
-            dtpContratacion.Location = new Point(808, 156);
+            dtpContratacion.Location = new Point(497, 98);
+            dtpContratacion.Margin = new Padding(2);
             dtpContratacion.Name = "dtpContratacion";
-            dtpContratacion.Size = new Size(194, 39);
+            dtpContratacion.Size = new Size(121, 27);
             dtpContratacion.TabIndex = 37;
             // 
             // dtpCierreContrato
             // 
-            dtpCierreContrato.Location = new Point(1370, 156);
+            dtpCierreContrato.Location = new Point(826, 97);
+            dtpCierreContrato.Margin = new Padding(2);
             dtpCierreContrato.Name = "dtpCierreContrato";
-            dtpCierreContrato.Size = new Size(194, 39);
+            dtpCierreContrato.Size = new Size(121, 27);
             dtpCierreContrato.TabIndex = 38;
             // 
             // btnLimpiar
@@ -422,9 +460,10 @@
             btnLimpiar.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
             btnLimpiar.ForeColor = SystemColors.ButtonHighlight;
             btnLimpiar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLimpiar.Location = new Point(3, 278);
+            btnLimpiar.Location = new Point(2, 174);
+            btnLimpiar.Margin = new Padding(2);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(444, 119);
+            btnLimpiar.Size = new Size(273, 74);
             btnLimpiar.TabIndex = 3;
             btnLimpiar.Text = "NUEVOS DATOS";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -439,9 +478,10 @@
             btnNomina.ForeColor = SystemColors.ButtonHighlight;
             btnNomina.Image = Properties.Resources.Nomina1;
             btnNomina.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNomina.Location = new Point(3, 712);
+            btnNomina.Location = new Point(2, 445);
+            btnNomina.Margin = new Padding(2);
             btnNomina.Name = "btnNomina";
-            btnNomina.Size = new Size(447, 119);
+            btnNomina.Size = new Size(275, 74);
             btnNomina.TabIndex = 2;
             btnNomina.Text = "NOMINA MENSUAL";
             btnNomina.UseVisualStyleBackColor = true;
@@ -456,9 +496,10 @@
             btnRegistro.ForeColor = SystemColors.ButtonHighlight;
             btnRegistro.Image = Properties.Resources.registro__2_;
             btnRegistro.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegistro.Location = new Point(3, 481);
+            btnRegistro.Location = new Point(2, 301);
+            btnRegistro.Margin = new Padding(2);
             btnRegistro.Name = "btnRegistro";
-            btnRegistro.Size = new Size(444, 119);
+            btnRegistro.Size = new Size(273, 74);
             btnRegistro.TabIndex = 1;
             btnRegistro.Text = "VER REGISTRO";
             btnRegistro.UseVisualStyleBackColor = true;
@@ -487,9 +528,11 @@
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
-            groupBox2.Location = new Point(483, 152);
+            groupBox2.Location = new Point(297, 95);
+            groupBox2.Margin = new Padding(2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1611, 304);
+            groupBox2.Padding = new Padding(2);
+            groupBox2.Size = new Size(991, 190);
             groupBox2.TabIndex = 40;
             groupBox2.TabStop = false;
             groupBox2.Text = "DATOS PERSONALES";
@@ -510,9 +553,11 @@
             groupBox3.Controls.Add(txtNumEmpleado);
             groupBox3.Controls.Add(label4);
             groupBox3.Controls.Add(label2);
-            groupBox3.Location = new Point(483, 499);
+            groupBox3.Location = new Point(297, 312);
+            groupBox3.Margin = new Padding(2);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(1611, 351);
+            groupBox3.Padding = new Padding(2);
+            groupBox3.Size = new Size(991, 219);
             groupBox3.TabIndex = 41;
             groupBox3.TabStop = false;
             groupBox3.Text = "INFORMACION LABORAL";
@@ -520,6 +565,7 @@
             // PanelOpciones
             // 
             PanelOpciones.BackColor = SystemColors.ControlDarkDark;
+            PanelOpciones.Controls.Add(btnExportar);
             PanelOpciones.Controls.Add(button1);
             PanelOpciones.Controls.Add(btnGuardar);
             PanelOpciones.Controls.Add(btnRegistro);
@@ -527,8 +573,9 @@
             PanelOpciones.Controls.Add(btnNomina);
             PanelOpciones.Dock = DockStyle.Left;
             PanelOpciones.Location = new Point(0, 0);
+            PanelOpciones.Margin = new Padding(2);
             PanelOpciones.Name = "PanelOpciones";
-            PanelOpciones.Size = new Size(450, 1427);
+            PanelOpciones.Size = new Size(277, 892);
             PanelOpciones.TabIndex = 42;
             // 
             // button1
@@ -540,9 +587,10 @@
             button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Image = Properties.Resources.Nomina1;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 956);
+            button1.Location = new Point(0, 598);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(447, 119);
+            button1.Size = new Size(275, 74);
             button1.TabIndex = 5;
             button1.Text = "NOMINA SEMANAL";
             button1.UseVisualStyleBackColor = true;
@@ -557,9 +605,10 @@
             btnGuardar.ForeColor = SystemColors.ButtonHighlight;
             btnGuardar.Image = Properties.Resources.empleados;
             btnGuardar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnGuardar.Location = new Point(3, 87);
+            btnGuardar.Location = new Point(2, 54);
+            btnGuardar.Margin = new Padding(2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(447, 106);
+            btnGuardar.Size = new Size(275, 66);
             btnGuardar.TabIndex = 4;
             btnGuardar.Text = "GUARDAR DATOS";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -569,11 +618,12 @@
             // 
             dgvRegistro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRegistro.Columns.AddRange(new DataGridViewColumn[] { CNempleado, CPnombre, CSnombre, CPapellido, CSapellido, CNtelefono, CNcelular, Ccedula, Cdireccion, CFnacimiento, Csexo, CEcivil, CNruc, CNinss, Csalario, CFcontratacion, CFcierrecontrato, CElaboral });
-            dgvRegistro.Location = new Point(456, 887);
+            dgvRegistro.Location = new Point(297, 545);
+            dgvRegistro.Margin = new Padding(2);
             dgvRegistro.Name = "dgvRegistro";
             dgvRegistro.RowHeadersWidth = 82;
             dgvRegistro.RowTemplate.Height = 41;
-            dgvRegistro.Size = new Size(1659, 537);
+            dgvRegistro.Size = new Size(1021, 336);
             dgvRegistro.TabIndex = 46;
             // 
             // CNempleado
@@ -702,17 +752,28 @@
             CElaboral.Name = "CElaboral";
             CElaboral.Width = 200;
             // 
+            // btnExportar
+            // 
+            btnExportar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnExportar.Location = new Point(12, 731);
+            btnExportar.Name = "btnExportar";
+            btnExportar.Size = new Size(243, 95);
+            btnExportar.TabIndex = 39;
+            btnExportar.Text = "Exportar Datos";
+            btnExportar.UseVisualStyleBackColor = true;
+            // 
             // Central_de_Datos
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkCyan;
-            ClientSize = new Size(2127, 1427);
+            ClientSize = new Size(1333, 892);
             Controls.Add(dgvRegistro);
             Controls.Add(PanelOpciones);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(label1);
+            Margin = new Padding(2);
             Name = "Central_de_Datos";
             Text = "Central_de_Datos";
             groupBox2.ResumeLayout(false);
@@ -791,5 +852,6 @@
         private DataGridViewTextBoxColumn CFcierrecontrato;
         private DataGridViewTextBoxColumn CElaboral;
         private Button button1;
+        private Button btnExportar;
     }
 }
