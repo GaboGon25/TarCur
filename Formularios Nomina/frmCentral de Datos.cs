@@ -13,8 +13,7 @@ namespace TarCur
 {
     public partial class Central_de_Datos : Form
     {
-        int i = 1;
-        int posicion;
+        List<Empleado> listaEmpleados = new List<Empleado>();
 
         public Central_de_Datos()
         {
@@ -28,33 +27,6 @@ namespace TarCur
             validaciones.ValidarLetras(txtPrimerNombre, e);
         }
 
-        public void CaptarDatos()
-        {
-            empleado.NumeroEmpleado = int.Parse(txtNumEmpleado.Text);
-            empleado.PrimerNombre = txtPrimerNombre.Text;
-            empleado.SegundoNombre = txtSegundoNombre.Text;
-            empleado.PrimerApellido = txtPrimerApellido.Text;
-            empleado.SegundoApellido = txtSegundoApellido.Text;
-            empleado.Telefono = int.Parse(txtTelefono.Text);
-            empleado.Celular = int.Parse(txtCelular.Text);
-            empleado.Cedula = txtCedula.Text;
-            empleado.Direccion = txtDireccion.Text;
-            empleado.FechaNacimiento = DateTime.Parse(dtpNacimiento.Text);
-            empleado.Sexo = cboGenero.Text;
-            empleado.EstadoCivil = cboEstadoC.Text;
-            empleado.NumeroRUC = int.Parse(txtNumRUC.Text);
-            empleado.NumeroINSS = int.Parse(txtNumINSS.Text);
-            empleado.SalarioBase = int.Parse(txtSalarioOrdinario.Text);
-            empleado.Contratacion = DateTime.Parse(dtpContratacion.Text);
-            empleado.CierreContrato = DateTime.Parse(dtpCierreContrato.Text);
-            empleado.EstadoLaboral = cboEstadoL.Text;
-        }
-
-        public void GuardarDatos()
-        {
-            dgvRegistro.Rows.Add(txtNumEmpleado.Text, txtPrimerNombre.Text, txtSegundoNombre.Text, txtPrimerApellido.Text, txtSegundoApellido.Text, txtTelefono.Text, txtCelular.Text, txtCedula.Text, txtDireccion.Text, dtpNacimiento.Text, cboGenero.Text, cboEstadoC.Text, txtNumRUC.Text, txtNumINSS.Text, txtSalarioOrdinario.Text, dtpContratacion.Text, dtpCierreContrato.Text, cboEstadoL.Text);
-
-        }
 
         public void BorrarDatos()
         {
@@ -76,7 +48,29 @@ namespace TarCur
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            GuardarDatos();
+            listaEmpleados.Add(new Empleado
+            {
+                NumeroEmpleado = int.Parse(txtNumEmpleado.Text),
+                PrimerNombre = txtPrimerNombre.Text,
+                SegundoNombre = txtSegundoNombre.Text,
+                PrimerApellido = txtPrimerApellido.Text,
+                SegundoApellido = txtSegundoApellido.Text,
+                Telefono = int.Parse(txtTelefono.Text),
+                Celular = int.Parse(txtCelular.Text),
+                Cedula = txtCedula.Text,
+                Direccion = txtDireccion.Text,
+                FechaNacimiento = DateTime.Parse(dtpNacimiento.Text),
+                Sexo = cboGenero.Text,
+                EstadoCivil = cboEstadoC.Text,
+                NumeroRUC = int.Parse(txtNumRUC.Text),
+                NumeroINSS = int.Parse(txtNumINSS.Text),
+                SalarioBase = int.Parse(txtSalarioOrdinario.Text),
+                Contratacion = DateTime.Parse(dtpContratacion.Text),
+                CierreContrato = DateTime.Parse(dtpCierreContrato.Text),
+                EstadoLaboral = cboEstadoL.Text,
+            });
+            dgvRegistro.DataSource = null;
+            dgvRegistro.DataSource = listaEmpleados;
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
