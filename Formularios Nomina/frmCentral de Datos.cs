@@ -13,13 +13,13 @@ namespace TarCur
 {
     public partial class Central_de_Datos : Form
     {
-        List<Empleado> listaEmpleados = new List<Empleado>();
+        List<DatosEmpleado> listaEmpleados = new List<DatosEmpleado>();
 
         public Central_de_Datos()
         {
             InitializeComponent();
         }
-        Empleado empleado = new Empleado();
+
         Validaciones validaciones = new Validaciones();
 
         private void txtPrimerNombre_KeyPress(object sender, KeyPressEventArgs e)
@@ -37,7 +37,7 @@ namespace TarCur
             txtSegundoApellido.Clear();
             txtTelefono.Clear();
             txtCelular.Clear();
-            txtCedula.Clear();
+            mtxtCedula.Clear();
             txtDireccion.Clear();
             txtNumRUC.Clear();
             txtNumINSS.Clear();
@@ -48,7 +48,7 @@ namespace TarCur
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            listaEmpleados.Add(new Empleado
+            listaEmpleados.Add(new DatosEmpleado
             {
                 NumeroEmpleado = int.Parse(txtNumEmpleado.Text),
                 PrimerNombre = txtPrimerNombre.Text,
@@ -57,7 +57,7 @@ namespace TarCur
                 SegundoApellido = txtSegundoApellido.Text,
                 Telefono = int.Parse(txtTelefono.Text),
                 Celular = int.Parse(txtCelular.Text),
-                Cedula = txtCedula.Text,
+                Cedula = mtxtCedula.Text,
                 Direccion = txtDireccion.Text,
                 FechaNacimiento = DateTime.Parse(dtpNacimiento.Text),
                 Sexo = cboGenero.Text,
@@ -141,6 +141,11 @@ namespace TarCur
         private void txtNumEmpleado_KeyPress(object sender, KeyPressEventArgs e)
         {
             validaciones.ValidarNumeros(txtNumEmpleado, e);
+        }
+
+        private void mtxtCedula_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            MessageBox.Show("Error al introducir el dato");
         }
     }
 }

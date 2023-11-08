@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TarCur
 {
-    public class Nomina: Empleado
+    public class Nomina: DatosNomina
     {
         // Calculos de los ingresos
         public virtual double CalculaRiesgoLaboral()
