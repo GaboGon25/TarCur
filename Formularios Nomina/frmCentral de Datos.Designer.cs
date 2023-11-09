@@ -70,14 +70,16 @@
             mtxtCedula = new MaskedTextBox();
             groupBox3 = new GroupBox();
             PanelOpciones = new Panel();
+            button2 = new Button();
             button1 = new Button();
             btnGuardar = new Button();
             dgvRegistro = new DataGridView();
-            button2 = new Button();
+            panel1 = new Panel();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             PanelOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvRegistro).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -85,7 +87,8 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(787, 43);
+            label1.ForeColor = SystemColors.ControlLight;
+            label1.Location = new Point(339, 18);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(902, 65);
@@ -322,6 +325,7 @@
             cboGenero.Name = "cboGenero";
             cboGenero.Size = new Size(193, 40);
             cboGenero.TabIndex = 27;
+            cboGenero.Text = "Seleccione";
             // 
             // cboEstadoC
             // 
@@ -332,6 +336,7 @@
             cboEstadoC.Name = "cboEstadoC";
             cboEstadoC.Size = new Size(193, 40);
             cboEstadoC.TabIndex = 28;
+            cboEstadoC.Text = "Seleccione";
             // 
             // txtDireccion
             // 
@@ -381,6 +386,7 @@
             cboEstadoL.Name = "cboEstadoL";
             cboEstadoL.Size = new Size(193, 40);
             cboEstadoL.TabIndex = 33;
+            cboEstadoL.Text = "Seleccione";
             // 
             // txtSalarioOrdinario
             // 
@@ -542,6 +548,22 @@
             PanelOpciones.Size = new Size(449, 1427);
             PanelOpciones.TabIndex = 42;
             // 
+            // button2
+            // 
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(4, 964);
+            button2.Margin = new Padding(4);
+            button2.Name = "button2";
+            button2.Size = new Size(444, 119);
+            button2.TabIndex = 6;
+            button2.Text = "EXPORTAR PLANILLA";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
             button1.Cursor = Cursors.Hand;
@@ -589,33 +611,27 @@
             dgvRegistro.Size = new Size(1658, 538);
             dgvRegistro.TabIndex = 46;
             // 
-            // button2
+            // panel1
             // 
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(4, 964);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(444, 119);
-            button2.TabIndex = 6;
-            button2.Text = "EXPORTAR PLANILLA";
-            button2.UseVisualStyleBackColor = true;
+            panel1.BackColor = SystemColors.ControlDarkDark;
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(449, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1716, 104);
+            panel1.TabIndex = 47;
             // 
             // Central_de_Datos
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkCyan;
+            BackColor = Color.LightSeaGreen;
             ClientSize = new Size(2165, 1427);
+            Controls.Add(panel1);
             Controls.Add(dgvRegistro);
             Controls.Add(PanelOpciones);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
-            Controls.Add(label1);
             Margin = new Padding(4);
             Name = "Central_de_Datos";
             Text = "Central_de_Datos";
@@ -625,8 +641,9 @@
             groupBox3.PerformLayout();
             PanelOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvRegistro).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -677,5 +694,6 @@
         private Button button1;
         private MaskedTextBox mtxtCedula;
         private Button button2;
+        private Panel panel1;
     }
 }

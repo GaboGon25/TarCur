@@ -50,6 +50,9 @@
             groupBox1 = new GroupBox();
             txtheTrabajadasNM = new TextBox();
             label1 = new Label();
+            txtBusqueda = new TextBox();
+            label2 = new Label();
+            btnBuscar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvNominaMensual).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -58,12 +61,11 @@
             // 
             dgvNominaMensual.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvNominaMensual.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10, Column11, Column12, Column13, Column14, Column15, Column16 });
-            dgvNominaMensual.Location = new Point(11, 172);
-            dgvNominaMensual.Margin = new Padding(2);
+            dgvNominaMensual.Location = new Point(18, 275);
             dgvNominaMensual.Name = "dgvNominaMensual";
             dgvNominaMensual.RowHeadersWidth = 82;
             dgvNominaMensual.RowTemplate.Height = 41;
-            dgvNominaMensual.Size = new Size(1092, 369);
+            dgvNominaMensual.Size = new Size(2055, 590);
             dgvNominaMensual.TabIndex = 0;
             dgvNominaMensual.CellContentClick += dgvNominaMensual_CellContentClick;
             // 
@@ -181,20 +183,18 @@
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(522, 23);
-            btnCalcular.Margin = new Padding(2);
+            btnCalcular.Location = new Point(1524, 37);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(169, 82);
+            btnCalcular.Size = new Size(275, 131);
             btnCalcular.TabIndex = 1;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = true;
             // 
             // btnExportar
             // 
-            btnExportar.Location = new Point(791, 23);
-            btnExportar.Margin = new Padding(2);
+            btnExportar.Location = new Point(1805, 37);
             btnExportar.Name = "btnExportar";
-            btnExportar.Size = new Size(165, 82);
+            btnExportar.Size = new Size(268, 131);
             btnExportar.TabIndex = 2;
             btnExportar.Text = "EXPORTAR";
             btnExportar.UseVisualStyleBackColor = true;
@@ -203,49 +203,73 @@
             // 
             groupBox1.Controls.Add(txtheTrabajadasNM);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(28, 36);
-            groupBox1.Margin = new Padding(2);
+            groupBox1.Location = new Point(952, 58);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2);
-            groupBox1.Size = new Size(338, 69);
+            groupBox1.Size = new Size(549, 110);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "OTROS DATOS";
             // 
             // txtheTrabajadasNM
             // 
-            txtheTrabajadasNM.Location = new Point(173, 31);
-            txtheTrabajadasNM.Margin = new Padding(2);
+            txtheTrabajadasNM.Location = new Point(281, 50);
             txtheTrabajadasNM.Name = "txtheTrabajadasNM";
-            txtheTrabajadasNM.Size = new Size(150, 27);
+            txtheTrabajadasNM.Size = new Size(241, 39);
             txtheTrabajadasNM.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(9, 32);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(15, 51);
             label1.Name = "label1";
-            label1.Size = new Size(165, 20);
+            label1.Size = new Size(259, 32);
             label1.TabIndex = 0;
             label1.Text = "Horas extras trabajadas";
             // 
+            // txtBusqueda
+            // 
+            txtBusqueda.Location = new Point(266, 88);
+            txtBusqueda.Name = "txtBusqueda";
+            txtBusqueda.Size = new Size(315, 39);
+            txtBusqueda.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(117, 94);
+            label2.Name = "label2";
+            label2.Size = new Size(124, 32);
+            label2.TabIndex = 5;
+            label2.Text = "Busqueda:";
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Location = new Point(622, 87);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(112, 39);
+            btnBuscar.TabIndex = 6;
+            btnBuscar.Text = "BUSCAR";
+            btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // frmNominaMensual
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1137, 586);
+            ClientSize = new Size(2112, 1060);
+            Controls.Add(btnBuscar);
+            Controls.Add(label2);
+            Controls.Add(txtBusqueda);
             Controls.Add(groupBox1);
             Controls.Add(btnExportar);
             Controls.Add(btnCalcular);
             Controls.Add(dgvNominaMensual);
-            Margin = new Padding(2);
             Name = "frmNominaMensual";
             Text = "frmNominaMensual";
             ((System.ComponentModel.ISupportInitialize)dgvNominaMensual).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -272,5 +296,8 @@
         private GroupBox groupBox1;
         private TextBox txtheTrabajadasNM;
         private Label label1;
+        private TextBox txtBusqueda;
+        private Label label2;
+        private Button btnBuscar;
     }
 }
